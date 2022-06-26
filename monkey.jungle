@@ -1,0 +1,6 @@
+#
+# SPDX-FileCopyrightText: 2021-2022 Wesley Schwengle <wesley@opperschaap.net>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+project.manifest = manifest.xml

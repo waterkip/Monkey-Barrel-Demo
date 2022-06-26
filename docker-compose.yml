@@ -1,0 +1,32 @@
+#
+# SPDX-FileCopyrightText: 2021-2022 Wesley Schwengle <wesley@opperschaap.net>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+version: '3.6'
+services:
+  reuse:
+    image: fsfe/reuse:latest
+    command:
+      - lint
+    volumes:
+      - ./:/data
+
+  connectiq:
+    image: connectiq-sdk:latest
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/home/ciq/.Xauthority:ro
+      - $HOME/.Garmin/ConnectIQ:/home/ciq/.Garmin/ConnectIQ
+      - $HOME/garmin:/mnt/garmin:rw
+      - ./:/home/ciq/src
+    environment:
+      DISPLAY: $DISPLAY
+      XAUTHORITY: /home/ciq/.Xauthority
+      CIQ_DEVICE: fenix6
+      MY_PROJECT: monkeybarreldemo
+      CIQ_API: 3.2.6
+      CIQ_TYPECHECK: 0
+
+networks:
+  default:
