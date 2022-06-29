@@ -49,7 +49,7 @@ barrelbuild -w -l 0 \
 You cannot barreltest it yet:
 
 ```
-/home/ciq/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-4.1.4-2022-06-07-f86da2dee//bin/barreltest -w -l 0 \
+barreltest -w -l 0 \
   -o bin/fenix6-monkeybarreldemo-3.2.6.test.barrel \
   -d fenix6 \
   -c 3.2.6 \
@@ -62,7 +62,7 @@ file with `patch -p1 < patches/fenix6.patch`. Or supply your own device. Make
 sure the device manager has the fenix6 or your own device installed.
 
 ```
-/home/ciq/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-4.1.4-2022-06-07-f86da2dee//bin/barreltest -w -l 0 \
+barreltest -w -l 0 \
   -o bin/fenix6-monkeybarreldemo-3.2.6.test.barrel \
   -d fenix6 \
   -c 3.2.6 \
