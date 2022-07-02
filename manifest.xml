@@ -3,18 +3,11 @@
 <iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
   <iq:barrel id="87f6b9e1-711f-4e98-a73e-1ac48f79dc13" module="MonkeyBarrelDemo" version="0.0.1" minApiLevel="1.0.0">
     <iq:products>
-      <iq:product id="fenix6"/>
-      <iq:product id="fenix6xpro"/>
     </iq:products>
     <iq:permissions/>
     <iq:languages/>
     <iq:barrels/>
     <iq:annotations>
-      <!--
-      <iq:annotation>test</iq:annotation>
-      <iq:annotation>release</iq:annotation>
-      <iq:annotation>all</iq:annotation>
-      -->
       <iq:annotation>foo</iq:annotation>
     </iq:annotations>
   </iq:barrel>
