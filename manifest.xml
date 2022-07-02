@@ -15,6 +15,7 @@
       <iq:annotation>release</iq:annotation>
       <iq:annotation>all</iq:annotation>
       -->
+      <iq:annotation>foo</iq:annotation>
     </iq:annotations>
   </iq:barrel>
 </iq:manifest>

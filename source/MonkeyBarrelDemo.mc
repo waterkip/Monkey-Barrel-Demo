@@ -8,7 +8,7 @@ using Toybox.Lang;
 
 module MonkeyBarrelDemo {
 
-    (:all)
+    (:foo)
     module Demo {
 
       function foo() {
