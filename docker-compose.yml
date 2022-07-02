@@ -24,7 +24,7 @@ services:
       DISPLAY: $DISPLAY
       XAUTHORITY: /home/ciq/.Xauthority
       CIQ_DEVICE: fenix6
-      MY_PROJECT: monkeybarreldemo
+      MY_PROJECT: MonkeyBarrelDemo
       CIQ_API: 3.2.6
       CIQ_TYPECHECK: 0
 

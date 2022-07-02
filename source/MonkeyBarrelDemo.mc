@@ -8,8 +8,8 @@ using Toybox.Lang;
 
 module MonkeyBarrelDemo {
 
-  (:release :test)
-    module demo {
+    (:all)
+    module Demo {
 
       function foo() {
         return true;
